@@ -13,12 +13,12 @@
     <link rel="stylesheet" href="input.css">
 </head>
 <body>
-    <header class="">
+    <header class="sm:px-2 py-[12px] md:py-[25px] lg:px-0">
       <div class="navbar bg-base-100 max-w-[1170px] mx-auto">
         <!-- mobile -->
         <div class="navbar-start">
           <div class="dropdown">
-            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <div tabindex="0" role="button" class="mr-2 lg:hidden md:mr-4 lg:mr-0">
               <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
             </div>
             <ul tabindex="0" class=" dropdown-content mt-3 z-[1] p-4 shadow bg-base-100 rounded-box w-52">
@@ -38,7 +38,7 @@
               <li class="py-1 pl-2 my-1 rounded-lg hover:bg-slate-100"><a class="text-[#424247] hover:text-[#FF4240] text-[16px] font-normal" href="/">Contact</a></li>
             </ul>
           </div>
-          <a href="/" class="text-4xl font-extrabold text-[#131318]" >Hockey<span class="text-[#FF4240]">’</span>s</a>
+          <a href="/" class="md:text-4xl text-2xl font-extrabold text-[#131318]" >Hockey<span class="text-[#FF4240]">’</span>s</a>
         </div>
         <!-- desktop -->
         <div class="hidden navbar-center lg:flex">
@@ -51,13 +51,104 @@
           </ul>
         </div>
         <div class="gap-6 navbar-end">
-          <img class="hidden w-6 h-6 md:flex" src="Images/search.svg" alt="search">
-          <a class="py-[10px] px-[17px] md:py-[13px] md:px-[24px] border-2 border-[#FF4240]  bg-[#FF4240] hover:bg-white transition-[4s] rounded-lg text-white hover:text-[#FF4240] font-bold text-xl">Get Ticket</a>
+          <img class="hidden w-5 h-5 md:flex" src="Images/search.svg" alt="search">
+          <a class="py-[8px] px-[17px] md:py-[13px] md:px-[24px] border-2 border-[#FF4240]  bg-[#FF4240] hover:bg-white transition-[4s] rounded-lg text-white hover:text-[#FF4240] font-bold md:text-xl text-lg">Get Ticket</a>
         </div>
       </div>
     </header>
     <main>
-        <p class="text-4xl text-red-700">Hello there</p>
+       <!-- hero start -->
+       <section class="max-w-[1170px] mx-auto px-2 xl:px-0">
+        <div class="w-full carousel rounded-2xl">
+            <!-- slider1 -->
+            <div id="slide1" class="relative w-full h-auto carousel-item transition-[4s]">
+              <!-- parent -->
+              <div class="flex-col">
+                <!-- child1 -->
+                <div class="relative min-h-[200px] w-full flex justify-center">
+                  <img src="Images/champion.png" class="w-full min-h-[200px]" />
+                  <div class="absolute flex justify-center gap-4 md:justify-start bottom-5 md:bottom-8 md:left-4 lg:left-8">
+                    <a href="#slide3" class="flex w-[40px] h-[40px] p-[10px] items-center justify-center rounded-full bg-[#131318] hover:bg-[#FF4240] transition-[4s]">
+                      <img src="Images/LeftArrow.svg" alt="icon">
+                    </a> 
+                    <a href="#slide2" class="flex w-[40px] h-[40px] p-[10px]  items-center justify-center rounded-full bg-[#131318] hover:bg-[#FF4240] transition-[4s]">
+                      <img src="Images/RigntArrow.svg" alt="icon">
+                    </a>
+                  </div>
+                </div>
+                <!-- child2-->
+                <!-- content -->
+                <div class="md:absolute w-full md:max-w-[565px] bottom-8 lg:right-8 md:right-4 p-8 text-left bg-[#131318] rounded-2xl mt-4 ">
+                  <h1 class="mb-4 text-lg font-extrabold text-white sm:text-2xl ">Hockey World Cup 2023</h1>
+                  <p class="text-[#ffffff99] font-medium text-sm sm:text-[16px]">Germany were trailing 2-0 at one stage but won their third World Cup in the penalty shootout. Germany won back-to-back titles in 2002 and 2006.</p>
+                </div>
+                <!-- content -->
+                <!-- child2-->
+              </div>   
+              <!-- parent -->
+              
+            </div> 
+
+            <!-- slider2 -->
+            <div id="slide2" class="relative w-full h-auto carousel-item transition-[4s]">
+              <!-- parent -->
+              <div class="flex-col">
+                <!-- child1 -->
+                <div class="relative min-h-[200px] w-full flex justify-center">
+                  <img src="Images/hockey-players.png" class="w-full min-h-[200px]" />
+                  <div class="absolute flex justify-center gap-4 md:justify-start bottom-5 md:bottom-8 md:left-4 lg:left-8">
+                    <a href="#slide1" class="flex w-[40px] h-[40px] p-[10px] items-center justify-center rounded-full bg-[#131318] hover:bg-[#FF4240] transition-[4s]">
+                      <img src="Images/LeftArrow.svg" alt="icon">
+                    </a> 
+                    <a href="#slide3" class="flex w-[40px] h-[40px] p-[10px]  items-center justify-center rounded-full bg-[#131318] hover:bg-[#FF4240] transition-[4s]">
+                      <img src="Images/RigntArrow.svg" alt="icon">
+                    </a>
+                  </div>
+                </div>
+                <!-- child2-->
+                <!-- content -->
+                <div class="md:absolute w-full md:max-w-[565px] bottom-8 lg:right-8 md:right-4 p-8 text-left bg-[#131318] rounded-2xl mt-4 ">
+                  <h1 class="mb-4 text-lg font-extrabold text-white sm:text-2xl ">Meet all the heroes from the field</h1>
+                  <p class="text-[#ffffff99] font-medium text-sm sm:text-[16px]">In a thrilling showdown on the ice, two top-tier hockey players collide, weaving skill and strategy into a mesmerizing dance of determination and finesse, as they vie for supremacy in an electrifying match.</p>
+                </div>
+                <!-- content -->
+                <!-- child2-->
+              </div>   
+              <!-- parent -->
+              
+            </div> 
+
+            <!-- slider3 -->
+            <div id="slide3" class="relative w-full h-auto carousel-item transition-[4s]">
+              <!-- parent -->
+              <div class="flex-col">
+                <!-- child1 -->
+                <div class="relative min-h-[200px] w-full flex justify-center">
+                  <img src="Images/hockey-players2.png" class="w-full min-h-[200px]" />
+                  <div class="absolute flex justify-center gap-4 md:justify-start bottom-5 md:bottom-8 md:left-4 lg:left-8">
+                    <a href="#slide2" class="flex w-[40px] h-[40px] p-[10px] items-center justify-center rounded-full bg-[#131318] hover:bg-[#FF4240] transition-[4s]">
+                      <img src="Images/LeftArrow.svg" alt="icon">
+                    </a> 
+                    <a href="#slide1" class="flex w-[40px] h-[40px] p-[10px]  items-center justify-center rounded-full bg-[#131318] hover:bg-[#FF4240] transition-[4s]">
+                      <img src="Images/RigntArrow.svg" alt="icon">
+                    </a>
+                  </div>
+                </div>
+                <!-- child2-->
+                <!-- content -->
+                <div class="md:absolute w-full md:max-w-[565px] bottom-8 lg:right-8 md:right-4 p-8 text-left bg-[#131318] rounded-2xl mt-4 ">
+                  <h1 class="mb-4 text-lg font-extrabold text-white sm:text-2xl ">The No. 1 player in hockey</h1>
+                  <p class="text-[#ffffff99] font-medium text-sm sm:text-[16px]">A virtuoso on the ice, the No. 1 player in hockey effortlessly commands attention with unparalleled skill, dazzling maneuvers, and an instinctive ability to orchestrate game-changing moments that leave spectators in awe.</p>
+                </div>
+                <!-- content -->
+                <!-- child2-->
+              </div>   
+              <!-- parent -->
+              
+            </div> 
+        </div>
+      </section>
+       <!-- hero end -->
     </main>
     <footer>
 
